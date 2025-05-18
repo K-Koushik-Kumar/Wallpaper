@@ -59,3 +59,16 @@ Installing /home/admin/picom/compton.desktop to /usr/local/share/applications
 Installing /home/admin/picom/media/icons/48x48/compton.png to /usr/local/share/icons/hicolor/48x48/apps
 Installing /home/admin/picom/media/compton.svg to /usr/local/share/icons/hicolor/scalable/apps
 Running custom install script '/bin/sh /home/admin/picom/meson/install.sh'
+
+workspace_layout default \
+
+for_window [class=".*"] border normal \
+
+sudo apt install i3-gaps \
+
+# Gaps \
+gaps inner 10 \
+gaps outer 15 \
+
+# Optional: Smart gaps \
+smart_gaps on \
