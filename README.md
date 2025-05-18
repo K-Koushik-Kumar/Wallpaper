@@ -88,10 +88,4 @@ sudo make install
 
 
 
-
-Run-time dependency xkbcommon-x11 found: NO (tried pkgconfig)
-
-meson.build:317:0: ERROR: Dependency "xkbcommon-x11" not found, tried pkgconfig
-
-A full log can be found at /home/admin/i3-gaps/build/meson-logs/meson-log.txt
-WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+picom --experimental-backends --config ~/.config/picom/picom.conf &
