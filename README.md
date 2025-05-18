@@ -89,3 +89,11 @@ sudo make install
 
 
 picom --experimental-backends --config ~/.config/picom/picom.conf &
+
+
+
+admin@vbox:~/.config/kitty$ picom
+[ 05/18/2025 12:44:51.337 parse_config_libconfig WARN ] The log-file in your configuration file is not an absolute path
+[ 05/18/2025 12:44:51.338 session_init ERROR ] Failed to setup log file ~/.cache/picom-log.log, I will keep using stderr
+[ 05/18/2025 12:44:51.420 vsync_opengl_swc_init ERROR ] Failed to load a swap control extension.
+[ 05/18/2025 12:44:51.421 session_init FATAL ERROR ] Failed to initialize the backend
