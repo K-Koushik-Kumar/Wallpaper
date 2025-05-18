@@ -2,14 +2,12 @@
 <h2 align="center">RICING</h2>
 
 <div align="center">
- 
-[![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.11-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim/releases/tag/stable)
-[![GitHub Issues](https://img.shields.io/github/issues/NvChad/NvChad.svg?style=flat-square&label=Issues&color=d77982)](https://github.com/NvChad/NvChad/issues)
-[![Discord](https://img.shields.io/discord/869557815780470834?color=738adb&label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/gADmkJb9Fb)
-[![Matrix](https://img.shields.io/badge/Matrix-40aa8b.svg?style=flat-square&logo=Matrix&logoColor=white)](https://matrix.to/#/#nvchad:matrix.org)
-[![Telegram](https://img.shields.io/badge/Telegram-blue.svg?style=flat-square&logo=Telegram&logoColor=white)](https://t.me/DE_WM)
 
-  </div>
+[![GitHub](https://img.shields.io/github/issues/NvChad/NvChad.svg?style=flat-square&label=Issues&color=d77982)]([https://github.com/NvChad/NvChad/issues](https://github.com/K-Koushik-Kumar/Wallpaper/)
+[![Discord](https://img.shields.io/discord/869557815780470834?color=738adb&label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/Xm9UrGTW)
+[![Telegram](https://img.shields.io/badge/Telegram-blue.svg?style=flat-square&logo=Telegram&logoColor=white)](https://t.me/koushikkodidala)
+
+</div>
 
 ## Showcase
 
@@ -76,7 +74,6 @@ Here are some details about my setup:
   </tbody>
 </table>
 
-
 ## Install Display Server
 
 <details><summary><b>Show instructions</b></summary>
@@ -105,10 +102,7 @@ startx
 
 </details>
 
-
-
 ## Install login manager
-
 
 <details><summary><b>Show instructions</b></summary>
   
@@ -136,8 +130,6 @@ Type=Application
 
 </details>
 
-
-
 ## Default X user groups set up
 
 <details><summary><b>Show instructions</b></summary>
@@ -158,7 +150,6 @@ sudo reboot
 ```
 </details>
 
-
 ## Set Wallpaper 
 
 <details><summary><b>Show instructions</b></summary>
@@ -178,13 +169,11 @@ xrandr --output Virtual1 --mode 1920x1080
 
 </details>
 
-
-
 ## Neofetch Kitty
 
-
 <details><summary><b>Show instructions</b></summary>
-```bash
+
+ ```bash
 sudo apt install neofetch
 sudo apt install kitty
 ```
@@ -229,8 +218,6 @@ sudo ninja -C build install
 ```
 
 </details>
-
-
 
 ---
 
