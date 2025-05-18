@@ -26,3 +26,6 @@ Run-time dependency xcb-xinerama found: NO (tried pkgconfig and cmake)
 src/meson.build:31:1: ERROR: Dependency "xcb-xinerama" not found, tried pkgconfig and cmake
 
 A full log can be found at /home/admin/picom/build/meson-logs/meson-log.txt
+
+sudo apt install libxcb-xinerama0-dev
+
