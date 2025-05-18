@@ -79,3 +79,13 @@ cd i3-gaps
 meson build
 ninja -C build
 sudo ninja -C build install
+
+
+sudo apt install -y \
+    git meson ninja-build \
+    libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev \
+    libxcb-util0-dev libxcb-icccm4-dev libyajl-dev \
+    libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev \
+    libxkbcommon-x11-dev libstartup-notification0-dev \
+    libxcb-xinerama0-dev libxcb-randr0-dev libxcb-shape0-dev \
+    libxcb-xrm-dev libxcb-render-util0-dev libxcb-ewmh-dev
