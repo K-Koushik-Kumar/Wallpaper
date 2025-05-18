@@ -46,6 +46,75 @@
 * Cross platform
   - Windows, macOS and Linux ready.
 
+## install Display Server
+```bash
+sudo apt update
+sudo apt install xorg xinit x11-xserver-utils
+```
+
+## install i3 Window Manager
+```bash
+sudo apt install i3
+```
+## start GUI
+edit xinitrc
+```bash
+nano ~/.xinitrc:
+```
+```bash
+exec i3
+```
+now start i3 using
+```bash
+startx
+```
+
+>if you're using LightDM, you can completely skip exec i3 (or any WM) in your ~/.xinitrc.
+
+## install login manager
+```bash
+sudo apt install lightdm
+sudo systemctl enable lightdm
+```
+Confirm the i3 session file exists:
+```bash
+ls /usr/share/xsessions/i3.desktop
+```
+```bash
+[Desktop Entry]
+Name=i3
+Comment=Dynamic window manager
+Exec=i3
+Type=Application
+```
+>**if not then create**
+
+>How LightDM Works:
+
+>LightDM is a display manager — it provides a login screen (greeter).
+
+>It doesn't use ~/.xinitrc or startx.
+
+>Instead, it uses .desktop files in /usr/share/xsessions/ to launch desktop environments or window managers.
+
+
+## default X user groups set up
+>When you install a minimal OS like Ubuntu Server, it doesn’t automatically put your user into groups that give permission to use hardware devices like the graphics card, keyboard, and mouse under X11 or Wayland.
+
+>These groups are essential for running a graphical environment properly.
+
+Check Your Groups
+```bash
+groups
+#You should see something like:
+yourusername : yourusername sudo
+```
+If video, input, etc. are missing, add them like this:
+```bash
+sudo usermod -aG video,input,audio,render yourusername
+sudo reboot
+```
+
 ## feh and xrandr
 
 EDIT -> .config/i3/config :
