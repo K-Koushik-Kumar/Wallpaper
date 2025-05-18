@@ -1,34 +1,81 @@
 
-<h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+<h2 align="center">RICING</h2>
 
-<p align="center">
-  <a href="https://badge.fury.io/js/electron-markdownify">
-    <img src="https://badge.fury.io/js/electron-markdownify.svg"
-         alt="Gitter">
-  </a>
-  <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
-  <a href="https://www.paypal.me/AmitMerchant">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
-  </a>
-</p>
+<div align="center">
+ 
+[![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.11-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim/releases/tag/stable)
+[![GitHub Issues](https://img.shields.io/github/issues/NvChad/NvChad.svg?style=flat-square&label=Issues&color=d77982)](https://github.com/NvChad/NvChad/issues)
+[![Discord](https://img.shields.io/discord/869557815780470834?color=738adb&label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/gADmkJb9Fb)
+[![Matrix](https://img.shields.io/badge/Matrix-40aa8b.svg?style=flat-square&logo=Matrix&logoColor=white)](https://matrix.to/#/#nvchad:matrix.org)
+[![Telegram](https://img.shields.io/badge/Telegram-blue.svg?style=flat-square&logo=Telegram&logoColor=white)](https://t.me/DE_WM)
 
+  </div>
 
+## Showcase
 
 ![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
 
-## Key Features
+## Information
+Here are some details about my setup:
 
-* LivePreview - Make changes, See changes
-  - Instantly see what your Markdown documents look like in HTML as you create them.
-* Sync Scrolling
-  - While you type, LivePreview will automatically scroll to the current location you're editing.
-* GitHub Flavored Markdown  
-* Emoji support in preview :tada:
-* App will keep alive in tray for quick usage
-* Full screen mode
-  - Write distraction free.
-* Cross platform
-  - Windows, macOS and Linux ready.
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%">
+        <b>OS</b>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        Linux
+      </td>
+    </tr>
+        <tr>
+      <td align="center" valign="top" width="14.28%">
+        <b>WM</b>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        i3
+      </td>
+    </tr>
+      </tr>
+        <tr>
+      <td align="center" valign="top" width="14.28%">
+        <b>Terminal</b>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+       kitty
+      </td>
+    </tr>
+    </tr>
+        <tr>
+      <td align="center" valign="top" width="14.28%">
+        <b>Shell</b>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+       bash
+      </td>
+    </tr>
+    </tr>
+          <tr>
+      <td align="center" valign="top" width="14.28%">
+        <b> Compositor</b>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+       picom
+      </td>
+    </tr>
+    </tr>
+          <tr>
+      <td align="center" valign="top" width="14.28%">
+        <b> Application Launcher</b>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        rofi
+      </td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Install Display Server
 
@@ -184,24 +231,6 @@ sudo ninja -C build install
 </details>
 
 
-## Credits
-
-This software uses the following open source packages:
-
-- [Electron](http://electron.atom.io/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-- [showdown](http://showdownjs.github.io/showdown/)
-- [CodeMirror](http://codemirror.net/)
-- Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
-- [highlight.js](https://highlightjs.org/)
-
-## Related
-
-[Try Web version of Markdownify](https://notepad.js.org/markdown-editor/)
 
 ---
 
-> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
-> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/amit_merchant)
