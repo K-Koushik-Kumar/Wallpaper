@@ -89,3 +89,13 @@ sudo apt install -y \
     libxkbcommon-x11-dev libstartup-notification0-dev \
     libxcb-xinerama0-dev libxcb-randr0-dev libxcb-shape0-dev \
     libxcb-xrm-dev libxcb-render-util0-dev libxcb-ewmh-dev
+
+
+    Library iconv found: NO
+Found pkg-config: /usr/bin/pkg-config (1.8.1)
+Run-time dependency libstartup-notification-1.0 found: NO (tried pkgconfig)
+
+meson.build:305:0: ERROR: Dependency "libstartup-notification-1.0" not found, tried pkgconfig
+
+A full log can be found at /home/admin/i3-gaps/build/meson-logs/meson-log.txt
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
