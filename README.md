@@ -1,12 +1,4 @@
 
-<h1 align="center">
-  <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
-  <br>
-  Markdownify
-  <br>
-</h1>
-
 <h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
 
 <p align="center">
@@ -56,8 +48,7 @@
 
 ## feh and xrandr
 
-EDIT -> .config/i3/config 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+EDIT -> .config/i3/config :
 
 ```bash
 # for wallpaper
@@ -70,11 +61,43 @@ xrandr --output Virtual1 --mode 1920x1080
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
+## NEOFETCH KITTY
+```bash
+sudo apt install neofetch
 
-## Download
+sudo apt install kitty
+# make kitty default
+sudo update-alternartives --config x-terminal-emulator
+```
+## PICOM i3-gaps
+```bash
+sudo apt install cmake libxext-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-render0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev libpcre2-dev libevdev-dev uthash-dev libx11-xcb-dev
 
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows, macOS and Linux.
+sudo apt install -y git meson ninja-build libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-shape0-dev libxcb-xrm-dev libxcb render-util0-dev libxcb-ewmh-dev
 
+sudo apt install m4 xcb-proto xutils-dev libxcb-util0-dev
+
+sudo apt install autoconf automake libtool pkg-config m4 libxcb1-dev libxcb-util0-dev xcb-proto xutils-dev
+# Dependency
+git clone https://github.com/Airblader/xcb-util-xrm.git 
+cd xcb-util-xrm 
+./autogen.sh --prefix=/usr 
+make 
+sudo make install
+# For picom
+git clone --recursive https://github.com/ibhagwan/picom.git 
+cd picom
+meson setup --buildtype=release build 
+ninja -C build 
+sudo ninja -C build install
+# For i3 gaps
+git clone https://www.github.com/Airblader/i3 i3-gaps 
+cd i3-gaps 
+meson build 
+ninja -C build 
+sudo ninja -C build install
+
+```
 ## Emailware
 
 Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
