@@ -73,7 +73,7 @@ sudo update-alternartives --config x-terminal-emulator
 ```bash
 sudo apt install cmake libxext-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-render0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev libpcre2-dev libevdev-dev uthash-dev libx11-xcb-dev
 
-sudo apt install -y git meson ninja-build libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-shape0-dev libxcb-xrm-dev libxcb render-util0-dev libxcb-ewmh-dev
+sudo apt install -y git meson ninja-build libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-shape0-dev libxcb-xrm-dev libxcb-render-util0-dev libxcb-ewmh-dev
 
 sudo apt install m4 xcb-proto xutils-dev libxcb-util0-dev
 
