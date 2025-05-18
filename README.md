@@ -29,3 +29,11 @@ A full log can be found at /home/admin/picom/build/meson-logs/meson-log.txt
 
 sudo apt install libxcb-xinerama0-dev
 
+
+============
+Run-time dependency libev found: NO (tried pkgconfig and cmake)
+Run-time dependency libpcre found: NO (tried pkgconfig and cmake)
+
+src/meson.build:47:1: ERROR: Dependency "libpcre" not found, tried pkgconfig and cmake
+
+A full log can be found at /home/admin/picom/build/meson-logs/meson-log.txt
