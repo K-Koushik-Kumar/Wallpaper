@@ -103,3 +103,13 @@ WARNING: Running the setup command as `meson [options]` instead of `meson setup 
 
 sudo apt install m4 xcb-proto xutils-dev libxcb-util0-dev
 
+
+
+
+Run-time dependency xcb-xrm found: NO (tried pkgconfig)
+
+meson.build:315:0: ERROR: Dependency "xcb-xrm" not found, tried pkgconfig
+
+A full log can be found at /home/admin/i3-gaps/build/meson-logs/meson-log.txt
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+
