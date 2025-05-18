@@ -47,12 +47,17 @@
   - Windows, macOS and Linux ready.
 
 ## install Display Server
+
+<details><summary><b>Show instructions</b></summary>
 ```bash
 sudo apt update
 sudo apt install xorg xinit x11-xserver-utils
 ```
+</details>
 
 ## install i3 Window Manager
+
+<details><summary><b>Show instructions</b></summary>
 ```bash
 sudo apt install i3
 ```
@@ -70,8 +75,14 @@ startx
 ```
 
 >if you're using LightDM, you can completely skip exec i3 (or any WM) in your ~/.xinitrc.
+</details>
+
+
 
 ## install login manager
+
+
+<details><summary><b>Show instructions</b></summary>
 ```bash
 sudo apt install lightdm
 sudo systemctl enable lightdm
@@ -97,8 +108,13 @@ Type=Application
 
 >Instead, it uses .desktop files in /usr/share/xsessions/ to launch desktop environments or window managers.
 
+</details>
+
+
 
 ## default X user groups set up
+
+<details><summary><b>Show instructions</b></summary>
 >When you install a minimal OS like Ubuntu Server, it doesn’t automatically put your user into groups that give permission to use hardware devices like the graphics card, keyboard, and mouse under X11 or Wayland.
 
 >These groups are essential for running a graphical environment properly.
@@ -114,9 +130,12 @@ If video, input, etc. are missing, add them like this:
 sudo usermod -aG video,input,audio,render yourusername
 sudo reboot
 ```
+</details>
+
 
 ## feh and xrandr
 
+<details><summary><b>Show instructions</b></summary>
 EDIT -> .config/i3/config :
 
 ```bash
@@ -129,12 +148,22 @@ xrandr --output Virtual1 --mode 1920x1080
 
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+</details>
+
+
 
 ## NEOFETCH KITTY
+
+
+<details><summary><b>Show instructions</b></summary>
 ```bash
 sudo apt install neofetch
 
 sudo apt install kitty
+</details>
+
+
+
 # make kitty default
 sudo update-alternartives --config x-terminal-emulator
 ```
@@ -165,8 +194,10 @@ cd i3-gaps
 meson build 
 ninja -C build 
 sudo ninja -C build install
-
 ```
+
+</details>
+
 ## Emailware
 
 Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
