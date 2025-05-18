@@ -75,7 +75,7 @@ sudo apt install cmake libxext-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-
 
 sudo apt install -y git meson ninja-build libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-shape0-dev libxcb-xrm-dev libxcb-render-util0-dev libxcb-ewmh-dev
 
-sudo apt install m4 xcb-proto xutils-dev libxcb-util0-dev
+sudo apt install m4 xcb-proto xutils-dev libxcb-util0-dev libpcre3-dev
 
 sudo apt install autoconf automake libtool pkg-config m4 libxcb1-dev libxcb-util0-dev xcb-proto xutils-dev
 # Dependency
