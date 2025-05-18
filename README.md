@@ -72,3 +72,10 @@ gaps outer 15 \
 
 # Optional: Smart gaps \
 smart_gaps on \
+
+
+git clone https://www.github.com/Airblader/i3 i3-gaps
+cd i3-gaps
+meson build
+ninja -C build
+sudo ninja -C build install
