@@ -49,25 +49,6 @@ ninja -C build
 sudo ninja -C build install
 
 
-sudo apt install -y \
-    git meson ninja-build \
-    libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev \
-    libxcb-util0-dev libxcb-icccm4-dev libyajl-dev \
-    libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev \
-    libxkbcommon-x11-dev libstartup-notification0-dev \
-    libxcb-xinerama0-dev libxcb-randr0-dev libxcb-shape0-dev \
-    libxcb-xrm-dev libxcb-render-util0-dev libxcb-ewmh-dev
-
-
-   
-
-
-sudo apt install m4 xcb-proto xutils-dev libxcb-util0-dev
-
-
-
-picom --experimental-backends --config ~/.config/picom/picom.conf &
-
 
 
 
@@ -80,20 +61,5 @@ sudo apt install autoconf automake libtool pkg-config m4 \
 libxcb1-dev libxcb-util0-dev xcb-proto xutils-dev
 
 
-git clone https://github.com/Airblader/xcb-util-xrm.git
-cd xcb-util-xrm
-./autogen.sh --prefix=/usr
-make
-sudo make install
 
 
-
-picom --experimental-backends --config ~/.config/picom/picom.conf &
-
-
-
-admin@vbox:~/.config/kitty$ picom
-[ 05/18/2025 12:44:51.337 parse_config_libconfig WARN ] The log-file in your configuration file is not an absolute path
-[ 05/18/2025 12:44:51.338 session_init ERROR ] Failed to setup log file ~/.cache/picom-log.log, I will keep using stderr
-[ 05/18/2025 12:44:51.420 vsync_opengl_swc_init ERROR ] Failed to load a swap control extension.
-[ 05/18/2025 12:44:51.421 session_init FATAL ERROR ] Failed to initialize the backend
