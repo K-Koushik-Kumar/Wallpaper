@@ -49,3 +49,13 @@ A full log can be found at /home/admin/picom/build/meson-logs/meson-log.txt
 
 sudo apt install libdbus-1-dev
 
+admin@vbox:~/picom$ sudo ninja -C build install
+ninja: Entering directory `build'
+[0/1] Installing files.
+Installing src/picom to /usr/local/bin
+Installing /home/admin/picom/bin/picom-trans to /usr/local/bin
+Installing /home/admin/picom/picom.desktop to /usr/local/share/applications
+Installing /home/admin/picom/compton.desktop to /usr/local/share/applications
+Installing /home/admin/picom/media/icons/48x48/compton.png to /usr/local/share/icons/hicolor/48x48/apps
+Installing /home/admin/picom/media/compton.svg to /usr/local/share/icons/hicolor/scalable/apps
+Running custom install script '/bin/sh /home/admin/picom/meson/install.sh'
