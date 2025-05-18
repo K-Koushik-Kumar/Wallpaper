@@ -91,14 +91,7 @@ sudo apt install -y \
     libxcb-xrm-dev libxcb-render-util0-dev libxcb-ewmh-dev
 
 
-    Library iconv found: NO
-Found pkg-config: /usr/bin/pkg-config (1.8.1)
-Run-time dependency libstartup-notification-1.0 found: NO (tried pkgconfig)
-
-meson.build:305:0: ERROR: Dependency "libstartup-notification-1.0" not found, tried pkgconfig
-
-A full log can be found at /home/admin/i3-gaps/build/meson-logs/meson-log.txt
-WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+   
 
 
 sudo apt install m4 xcb-proto xutils-dev libxcb-util0-dev
@@ -112,4 +105,22 @@ meson.build:315:0: ERROR: Dependency "xcb-xrm" not found, tried pkgconfig
 
 A full log can be found at /home/admin/i3-gaps/build/meson-logs/meson-log.txt
 WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+
+
+
+
+
+
+
+
+
+sudo apt install autoconf automake libtool pkg-config m4 \
+libxcb1-dev libxcb-util0-dev xcb-proto xutils-dev
+
+
+git clone https://github.com/Airblader/xcb-util-xrm.git
+cd xcb-util-xrm
+./autogen.sh --prefix=/usr
+make
+sudo make install
 
