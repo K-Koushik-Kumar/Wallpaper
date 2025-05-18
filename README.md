@@ -39,3 +39,10 @@ src/meson.build:47:1: ERROR: Dependency "libpcre" not found, tried pkgconfig and
 A full log can be found at /home/admin/picom/build/meson-logs/meson-log.txt
 
 sudo apt install libev-dev libpcre3-dev
+
+
+Run-time dependency dbus-1 found: NO (tried pkgconfig and cmake)
+
+src/meson.build:68:1: ERROR: Dependency "dbus-1" not found, tried pkgconfig and cmake
+
+A full log can be found at /home/admin/picom/build/meson-logs/meson-log.txt
