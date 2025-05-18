@@ -99,3 +99,7 @@ meson.build:305:0: ERROR: Dependency "libstartup-notification-1.0" not found, tr
 
 A full log can be found at /home/admin/i3-gaps/build/meson-logs/meson-log.txt
 WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+
+
+sudo apt install m4 xcb-proto xutils-dev libxcb-util0-dev
+
