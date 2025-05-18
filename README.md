@@ -46,3 +46,6 @@ Run-time dependency dbus-1 found: NO (tried pkgconfig and cmake)
 src/meson.build:68:1: ERROR: Dependency "dbus-1" not found, tried pkgconfig and cmake
 
 A full log can be found at /home/admin/picom/build/meson-logs/meson-log.txt
+
+sudo apt install libdbus-1-dev
+
