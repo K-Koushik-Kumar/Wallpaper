@@ -7,22 +7,12 @@
          alt="Gitter">
   </a>
   <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
-  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
-      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
-  </a>
   <a href="https://www.paypal.me/AmitMerchant">
     <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
   </a>
 </p>
 
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
-</p>
+
 
 ![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
 
@@ -33,12 +23,6 @@
 * Sync Scrolling
   - While you type, LivePreview will automatically scroll to the current location you're editing.
 * GitHub Flavored Markdown  
-* Syntax highlighting
-* [KaTeX](https://khan.github.io/KaTeX/) Support
-* Dark/Light mode
-* Toolbar for basic Markdown formatting
-* Supports multiple cursors
-* Save the Markdown preview as PDF
 * Emoji support in preview :tada:
 * App will keep alive in tray for quick usage
 * Full screen mode
@@ -46,43 +30,41 @@
 * Cross platform
   - Windows, macOS and Linux ready.
 
-## install Display Server
+## Install Display Server
 
 <details><summary><b>Show instructions</b></summary>
+
 ```bash
 sudo apt update
 sudo apt install xorg xinit x11-xserver-utils
 ```
+
 </details>
 
-## install i3 Window Manager
+## Install i3 Window Manager
 
 <details><summary><b>Show instructions</b></summary>
+
 ```bash
 sudo apt install i3
-```
-## start GUI
-edit xinitrc
-```bash
-nano ~/.xinitrc:
-```
-```bash
+# start GUI by editing xinitrc
+nano ~/.xinitrc
 exec i3
-```
-now start i3 using
-```bash
+# now start i3 using
 startx
 ```
 
 >if you're using LightDM, you can completely skip exec i3 (or any WM) in your ~/.xinitrc.
+
 </details>
 
 
 
-## install login manager
+## Install login manager
 
 
 <details><summary><b>Show instructions</b></summary>
+  
 ```bash
 sudo apt install lightdm
 sudo systemctl enable lightdm
@@ -101,23 +83,20 @@ Type=Application
 >**if not then create**
 
 >How LightDM Works:
-
 >LightDM is a display manager — it provides a login screen (greeter).
-
 >It doesn't use ~/.xinitrc or startx.
-
 >Instead, it uses .desktop files in /usr/share/xsessions/ to launch desktop environments or window managers.
 
 </details>
 
 
 
-## default X user groups set up
+## Default X user groups set up
 
 <details><summary><b>Show instructions</b></summary>
->When you install a minimal OS like Ubuntu Server, it doesn’t automatically put your user into groups that give permission to use hardware devices like the graphics card, keyboard, and mouse under X11 or Wayland.
 
->These groups are essential for running a graphical environment properly.
+When you install a minimal OS like Ubuntu Server, it doesn’t automatically put your user into groups that give permission to use hardware devices like the graphics card, keyboard, and mouse under X11 or Wayland.
+These groups are essential for running a graphical environment properly.
 
 Check Your Groups
 ```bash
@@ -133,9 +112,10 @@ sudo reboot
 </details>
 
 
-## feh and xrandr
+## Set Wallpaper 
 
 <details><summary><b>Show instructions</b></summary>
+  
 EDIT -> .config/i3/config :
 
 ```bash
@@ -148,26 +128,31 @@ xrandr --output Virtual1 --mode 1920x1080
 
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+
 </details>
 
 
 
-## NEOFETCH KITTY
+## Neofetch Kitty
 
 
 <details><summary><b>Show instructions</b></summary>
 ```bash
 sudo apt install neofetch
-
 sudo apt install kitty
-</details>
+```
 
+**make kitty default**
 
-
-# make kitty default
+```bash
 sudo update-alternartives --config x-terminal-emulator
 ```
-## PICOM i3-gaps
+</details>
+
+## Picom i3-gaps
+
+<details><summary><b>Show instructions</b></summary>
+
 ```bash
 sudo apt install cmake libxext-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-render0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev libpcre2-dev libevdev-dev uthash-dev libx11-xcb-dev
 
@@ -198,9 +183,6 @@ sudo ninja -C build install
 
 </details>
 
-## Emailware
-
-Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
 
 ## Credits
 
