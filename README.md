@@ -271,6 +271,58 @@ PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 #Replace it with
 PS1='> '
 ```
+>**note** sudo apt install rxvt-unicode lxterminal
 
+TO edit i3status
+Find and open:
+nano ~/.config/i3status/config
+/etc/i3status.conf
+
+## i3 bar
+edit picom config:
+
+```bash
+opacity-rule = [
+  "100:class_g = 'i3bar'"
+];
+```
+
+Edit ~/.config/i3/config
+
+```bash
+bar {
+    position top
+    status_command i3status
+    tray_output primary
+    font pango:JetBrains Mono 10
+
+    colors {
+        background #ffffff
+        statusline #000000
+        separator  #888888
+
+        focused_workspace  #ffffff #ffffff #000000
+        inactive_workspace #f0f0f0 #f0f0f0 #888888
+        urgent_workspace   #ff0000 #ffffff #000000
+    }
+}
+```
+
+## Shadow Box Config
+
+```bash
+shadow = true;
+shadow-radius = 12;
+shadow-offset-x = -10;
+shadow-offset-y = -10;
+shadow-opacity = 0.4;
+shadow-exclude = [
+  "class_g = 'i3-frame'",
+  "class_g = 'i3bar'",
+  "window_type = 'desktop'",
+  "_NET_WM_STATE@:32a *= '_NET_WM_STATE_HIDDEN'"
+];
+shadow-exclude-reg = [];
+```
 ---
 
