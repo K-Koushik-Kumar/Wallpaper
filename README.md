@@ -221,3 +221,34 @@ sudo ninja -C build install
 
 ---
 
+```bash
+
+mkdir -p ~/.config/picom
+nano ~/.config/picom/picom.conf
+
+backend = "glx";
+vsync = true;
+
+opacity-rule = [
+  "90:class_g = 'Alacritty'",
+  "90:class_g = 'URxvt'",
+  "90:class_g = 'XTerm'",
+  "90:class_g = 'kitty'",
+  "90:class_g = 'gnome-terminal'",
+  "90:class_g = 'xfce4-terminal'",
+];
+
+inactive-opacity = 0.9;
+active-opacity = 0.95;
+frame-opacity = 0.9;
+blur-background = true;
+blur-background-exclude = ["window_type = 'dock'", "window_type = 'desktop'"];
+
+
+
+nano ~/.config/i3/config
+exec --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
+
+
+```
+
