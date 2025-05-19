@@ -249,6 +249,8 @@ blur-background-exclude = ["window_type = 'dock'", "window_type = 'desktop'"];
 nano ~/.config/i3/config
 exec --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
 
+picom --experimental-backends --config ~/.config/picom/picom.conf &
+
 
 ```
 
