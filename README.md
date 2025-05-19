@@ -281,6 +281,8 @@ opacity-rule = [
   "90:class_g = 'x-terminal-emulator'"
 ];
 
+WM_CLASS(STRING) = "gnome-terminal-server", "Gnome-terminal"
+
 
 ```
 
