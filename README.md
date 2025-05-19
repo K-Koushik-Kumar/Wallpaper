@@ -282,6 +282,7 @@ opacity-rule = [
 ];
 
 WM_CLASS(STRING) = "gnome-terminal-server", "Gnome-terminal"
+[ 05/19/2025 08:32:42.046 parse_rule_border ERROR ] No border width specified: class_g = '.*'
 
 
 ```
