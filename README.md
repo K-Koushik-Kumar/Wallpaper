@@ -292,6 +292,7 @@ round-borders-rule = [
   "10:class_g = '.*'"
 ];
 
+for_window [class=".*"] border pixel 2
 
 
 ```
