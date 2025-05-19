@@ -10,7 +10,7 @@
 
 ## Showcase
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+![screenshot](https://github.com/K-Koushik-Kumar/Wallpaper/blob/main/Screenshot%202025-05-19%20191129.png)
 
 ## Information
 
