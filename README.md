@@ -248,8 +248,38 @@ blur-background-exclude = ["window_type = 'dock'", "window_type = 'desktop'"];
 
 nano ~/.config/i3/config
 exec --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
-
 picom --experimental-backends --config ~/.config/picom/picom.conf &
+
+
+
+
+sudo apt install rxvt-unicode lxterminal
+xprop | grep WM_CLASS
+
+
+backend = "glx";
+vsync = true;
+
+corner-radius = 12;
+round-borders = 1;
+round-borders-rule = [
+  "class_g = '.*'"
+];
+
+blur-method = "dual_kawase";
+blur-strength = 7;
+blur-background = true;
+blur-background-frame = true;
+
+blur-background-exclude = [
+  "window_type = 'dock'",
+  "window_type = 'desktop'",
+  "class_g = 'i3-frame'"
+];
+
+opacity-rule = [
+  "90:class_g = 'x-terminal-emulator'"
+];
 
 
 ```
