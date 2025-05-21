@@ -324,5 +324,56 @@ shadow-exclude = [
 ];
 shadow-exclude-reg = [];
 ```
+
+
+
+
+
+
+
+
+```bash
+
+mkdir -p ~/.config/rofi
+nano ~/.config/rofi/config.rasi
+
+configuration {
+  modi: "drun,window";
+  font: "JetBrainsMono Nerd Font 12";
+  show-icons: true;
+  icon-theme: "Papirus";
+  display-drun: "Apps:";
+  display-window: "Windows:";
+  location: center;
+  anchor: center;
+  fullscreen: false;
+  width: 30;
+  theme: "~/.config/rofi/mytheme.rasi";
+}
+
+@import "mytheme.rasi"
+
+nano ~/.config/rofi/mytheme.rasi
+
+* {
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.6);  /* transparent black */
+  border: 2px;
+  border-color: #61afef;
+  border-radius: 10px;
+  font: "JetBrainsMono Nerd Font 12";
+  text-color: #ffffff;
+  selected-normal-background: rgba(97, 175, 239, 0.4);
+  selected-normal-foreground: #ffffff;
+}
+
+
+
+
+```
+
+
+
+
 ---
 
