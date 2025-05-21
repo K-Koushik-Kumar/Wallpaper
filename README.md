@@ -344,20 +344,20 @@ configuration {
   icon-theme: "Papirus";
   display-drun: "Apps:";
   display-window: "Windows:";
-  location: center;
-  anchor: center;
+  location: 0;  // use 0–5 here; not a word like "center"
+  anchor: "center";
   fullscreen: false;
   width: 30;
-  theme: "~/.config/rofi/mytheme.rasi";
 }
 
-@import "mytheme.rasi"
+@theme "mytheme.rasi"
+
 
 nano ~/.config/rofi/mytheme.rasi
 
 * {
   background: transparent;
-  background-color: rgba(0, 0, 0, 0.6);  /* transparent black */
+  background-color: rgba(0, 0, 0, 0.6);
   border: 2px;
   border-color: #61afef;
   border-radius: 10px;
