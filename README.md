@@ -367,6 +367,50 @@ nano ~/.config/rofi/mytheme.rasi
   selected-normal-foreground: #ffffff;
 }
 
+* {
+  font: "JetBrainsMono Nerd Font 12";
+  text-color: #ffffff;
+}
+
+window {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px;
+  border-color: #61afef;
+  border-radius: 10px;
+}
+
+mainbox {
+  border: 0px;
+  padding: 10px;
+}
+
+listview {
+  border: 0px;
+  padding: 5px;
+  columns: 1;
+  lines: 10;
+}
+
+element {
+  border: 0px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+element selected {
+  background-color: rgba(97, 175, 239, 0.3);
+  text-color: #ffffff;
+}
+
+element-icon {
+  size: 24px;
+}
+
+element-text {
+  padding: 5px;
+}
+
+
 
 
 
